@@ -9,4 +9,14 @@ declare global {
   }
 }
 
-export {}
+declare class Product {
+	id: string
+	name: string
+	price: number
+  image: string
+}
+
+declare class CartItem {
+	id: string
+	quantity: number
+}
