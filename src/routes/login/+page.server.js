@@ -18,20 +18,3 @@ export async function load() {
       throw error;
 	}
 }
-
-function submitForm(event) {
-  const form = event.target;
-  const email = form.email.value;
-  const password = form.password.value;
-
-  // Validate the form fields
-  if (!email || !password) {
-      console.log('Input fields are required: email: ' + email + ' password: ' + password);
-      return;
-  }
-
-  // const { rows: users } = await db.query('SELECT * FROM users where email = $1', [email, password]);
-  console.log(users);
-
-  // window.location.replace('/product');
-};
